@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p align=center> Please check the output on consoles</p>
+    <script>
+    
+// takink input from the user
+const number = parseInt(prompt('Enter a positive integer: '));
+
+// checking if the number is negative or not
+if (number < 0) {
+    console.log('Error! Factorial for negative number does not exist.');
+}
+
+// if the number is 0 
+else if (number === 0) {
+    console.log(`The factorial of ${number} is 1.`);
+}
+
+// if number is positive
+else {
+    let fact = 1;
+    for (i = 1; i <= number; i++) {
+        fact *= i;
+    }
+    console.log(`The factorial of ${number} is ${fact}.`);
+}
+</script>
+</body>
+</html>
